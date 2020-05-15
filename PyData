@@ -1,0 +1,346 @@
+"""While loop and if else"""
+"""
+a = str(input("enter you name"))
+if len(a) <= 3:
+    print("your name has atleast 3 char")
+elif len(a)>=50:
+    print("max 50 allow")
+else:
+    print("looks good huhh.") """
+
+"""a = float(input("Weight:"))
+b=input("(L)bs or (k)g:")
+if b=="K":
+    c=a*2.2
+    print("Your weigh isTHIS ", c)
+elif  b=="L" :
+    c=a/2.2
+    print("Your weigh is in KGs",c)
+
+else:
+    print("You Idiot ") """
+
+"""i=1
+while  i<=5 :
+    print(i)
+    i = i + 1 """
+
+"""
+secret_no=9
+guess_count=0
+guess_lmt=3
+
+while guess_count<guess_lmt:
+    guess = int(input("Guess:"))
+    guess_count+=1
+
+    if guess==secret_no:
+        print("You won")
+        break
+else:
+    print("You lose") """
+
+"""print("You Can Type Help ")
+cmd=""
+
+while True :
+    cmd=input(">").lower()
+    if cmd =="start":
+        print("Car is started")
+    elif cmd =="stop":
+         print("car stoppped")
+    elif cmd =="help":
+
+        print("multiline comment")
+
+    elif cmd=="quit":
+        break
+    else:
+        print("Sorry i Didint nderstnd")"""
+
+"""i=0
+j=1
+while i<=1:
+    print("+++")
+
+    while j<=4:  #execute till condition successful than print i
+        print("okay")
+        j=j+1
+    i=i+1"""
+
+"""i=1
+while i<=4: 
+    print("#####")
+    i=i+1"""
+
+"""i=0
+while i<=100:
+     if (i%2==0):
+      print(i)
+     i=i+1
+
+j = 0
+while j<=100:
+    if (j%2!=0):
+      print(j)
+    j=j+1 """
+
+"""i=1
+while i<6:
+    print("*"*i)
+    i=i+1"""
+
+"""i=0 #userinput
+a=int(input("please enter a value"))
+while i<=a:
+    if(i%2==0):
+      print(i)
+    i=i+2 """
+
+"""i=int(input("enter a value"))
+a = int(input("end no"))
+if i<=5:
+    print("more than 5")
+while i<=a:
+    print(i)
+    i=i+1
+"""
+
+"""a=int(input("Enter a value"))
+if (a%2==0):
+    print("perfect")
+else:
+    b=f' {a} is not a perfect string'
+    print(b) """
+
+""""""""""""""""""""""""""""""""
+"""For loop"""
+
+"""
+name=input("enter name")
+for i in name:
+    print(i)
+"""
+
+"""
+"[use of range]"
+for a in range(10,20,2):
+    print(a)"""
+
+"""
+price = [10, 20, 30]
+totel = 0
+for prices in price:
+    totel += prices
+print(totel)"""
+
+"""no=[5,2,5,2,2]
+for i in no:
+    for j in no:
+        print(i,j*"X")"""
+
+"""list=[1,1,1,1,10]
+for a in list:
+    output = ""
+    for count in range(a):
+        output+="X"
+    print(output)"""
+
+"""lucky_no=9
+guess=3
+count=0
+
+while count<guess:
+    guess=int(input("guess"))
+    count+=1
+
+    if guess==lucky_no:
+        print("you won")
+        break
+else:
+    print("looser") """
+
+"""c=range(1,50)
+for i  in c :
+    if i % 2==0:
+        print(i)"""
+
+""""a = int(input("Enter the number of line \n"))
+for i in range(1,a+10):
+ print("*  "*i) """
+
+"""a=int(input("enter a no."))
+c = a % 2
+if a==0:
+    print("good")
+elif a>5:
+        print("greater than 5")
+else:
+    print("wrong")
+"""
+
+"""
+import os
+import wget
+
+print(""1 for install httpd"")
+
+inpt = input("enter ")
+if inpt == "1":
+    askusr = str(input("Do Want to configure repo file ? YES or No"))
+    if askusr == "yes":
+        os.system(""wget https://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+                     rpm -i epel-release-6-8.noarch.rpm "")
+
+    elif askusr == "no":
+        os.system("yum install httpd -y ")
+else:
+    print("SORRY :(") """
+
+"""import os
+
+print("\n \t\t\twelcome in remote access")
+print("\n")
+rmipt = str(input("Please Enter REMOTE IP "))  #
+iplist = ['192.168.198.128', 'google.com']  # iplist store ip as string
+
+if rmipt in iplist:  # condition check
+    exitcode = os.system("ping -w 2 " + rmipt)  # ping
+    if exitcode == 0:
+        print("\n")
+        os.system("tput setaf 2")
+        print(rmipt + ' is up!')
+        # if ip is pingable then show the menu
+        os.system("tput setaf 7")
+      #options here
+    while True :
+        print("ENTER THE NO. IN BETWEEN ABOVE MENTION", end=" ")
+        usript = str(input(""))  # variable for all conditions
+
+        if usript == "1":
+          os.system("ssh {} date".format(rmipt))
+
+        elif usript =="2":
+            os.system("ssh {} cal".format(rmipt))
+
+        elif usript =="3":
+            os.system()
+
+        elif usript =="4":
+            break
+
+    else:
+          print("OUT OF SERVICE")
+
+else:
+ print("OUT OF DATABASE")  # if not in list
+ exit() """
+
+"""
+import os
+
+start = 0
+end = 3
+
+while start < end:
+
+    if True:
+        create_usr = str(input("enter new userName "))
+        os.system("useradd {0}  &&  passwd {0}".format(create_usr))
+        break
+    else:
+       start = start + 1
+else:
+    print("Bye")"""
+
+"""a=[343,34,3421,343]
+max = a[0]
+for find in a:
+    if find >max:
+        max=find
+
+print(max)
+"""
+
+"""
+matrix=[
+       [43,48,65],
+       [49,46,54],
+       [45,65,21]
+]
+print(matrix[0][1])
+matrix[0][1] = 10
+print(matrix[0][1]) """
+
+"""a=[24,24,34,343,24,54]
+sum=0
+
+for i in a:
+    sum=sum+i    
+print(sum) """
+
+"""import os
+
+print("\n \t\t\twelcome in remote access")
+print("\n")
+rmipt = str(input("Please Enter REMOTE IP "))  #
+iplist = ['192.168.198.128', 'google.com']  # iplist store ip as string
+
+if rmipt in iplist:  # condition check
+    exitcode = os.system("ping -w 2 " + rmipt)  # ping
+    if exitcode == 0:
+        print("\n")
+        os.system("tput setaf 2")
+        print(rmipt + ' is up!')
+        # if ip is pingable then show the menu
+    while True:
+        os.system("tput setaf 4")
+        print("ENTER THE NO. IN BETWEEN ABOVE MENTION", end=" ")
+        os.system("tput setaf 5")
+        
+        #HERE CHOICES
+        
+        os.system("tput setaf 7")
+
+        usript = str(input(""))  # variable for all conditions
+
+        if usript == "1":
+            os.system("ssh {} date".format(rmipt))
+
+        elif usript == "2":
+            os.system("ssh {} cal".format(rmipt))
+
+        elif usript == "3":
+            create_usr = str(input("enter new userName "))
+            os.system(" ssh {1} useradd {0} && passwd {0}".format(create_usr, rmipt))
+
+
+        elif usript == "4":
+            break
+
+        else:
+            print("OUT OF SERVICE")
+
+        input("Press Enter")
+        os.system("clear")
+
+else:
+    print("OUT OF DATABASE")  # if not in list
+    exit() """
+
+"""def add():
+    i = int(input("start"))
+    end = int(input("end"))
+    while i <= end:
+        print(i * "*")
+        i = i + 1
+
+    else:
+         print("Start Value Should always Great than end value")
+"""
+
+
+from exxpml import *
+
+result=add(4)
+print(result)
