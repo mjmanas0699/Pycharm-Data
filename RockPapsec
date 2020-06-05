@@ -1,0 +1,24 @@
+from random import randint
+t = ["Rock", "Paper", "Scissors"]
+computer = t[randint(0,2)]
+print("Enter Anything - Rock, Paper, Scissors",end=" ")
+usr=input("")
+if usr==computer:
+    print("TIE")
+elif usr=="Rock":
+    if computer == "Paper":
+        print("Computer Win")
+    else :
+          print("You Win") 
+elif usr=="Paper":
+    if computer == "Scissors":
+        print("Computer Win")
+    else :
+        print("You Win") 
+elif usr=="Scissors":
+    if computer == "Rock":
+        print("Computer Win")
+    else :
+        print("You Win") 
+print("Computer Choose",computer)
+print("User Choose",usr)
